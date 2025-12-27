@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const jumbo = document.querySelector('.jumbo');
+const thumbs = document.querySelectorAll('.thumb');
 
 container.addEventListener('click', function(e) {
 
@@ -15,7 +16,6 @@ container.addEventListener('click', function(e) {
         e.target.classList.add('active');
 
         //menghilangkan active pada gambar lain
-        const thumbs = document.querySelectorAll('.thumb');
         thumbs.forEach(function(thumb) {
             if(thumb != e.target) {
                 thumb.classList.remove('active');
